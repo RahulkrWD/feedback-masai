@@ -36,10 +36,13 @@ function FeedbackForm() {
   const [list, setList] = useState([]);
 
   async function postFeedback(e) {
-    if (!form.name) return alert("Name is required!");
-    if (!form.email) return alert("email is required!");
-    if (!form.comment) return alert("Comment is required!");
     e.preventDefault();
+    if (!form.name || !form.email || !form.comment) {
+      setMessage("All fields are required!");
+      setTimeout(() => setMessage(""), 1500);
+      return;
+    }
+
     try {
       let response = await fetch(`${baseurl}/feedback.json`, {
         method: "POST",

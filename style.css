@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.theme-btn{
+    background-color: white;
+    border: none;
+    font-size: 30px;
+   margin: 20px 0 10px 20px;
+   cursor: pointer;
+}
+.theme-btn .fa-sun{
+    color: #d0d007c9;
+    padding: 7px;
+    
+}
+.theme-btn .fa-moon{
+    color: black;
+    padding: 7px;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+/* Feedback form */
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    color: black;
+}
+.feedback-form{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    
+}
+.feedback-form > div{
+    border: 1px solid #aba8a8;
+    min-width: 40vw;
+    width: 450px;
+    padding: 30px 50px;
+    border-radius: 7px;
+    box-shadow: 4px 7px 7px #aba8a8;
+}
+
+.form-title{
+    padding: 10px 0 5px 0;
+    color: blueviolet;
+
+}
+.input-fields{
+    padding: 30px 0;
+}
+
+.input-fields .fa-user{
+    color: #5252f7;
+    
+}
+.input-fields .fa-envelope{
+    color: #d60c0c;
+}
+
+.input-fields .fa-message{
+    color: chocolate;
+}
+label{
+    display: block;
+    font-size: 22px;
+    padding: 7px;
+}
+.input-fields input, textarea{
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1px;
+    margin: 7px 0;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 18px;
+
+}
+
+.input-fields .submit-btn{
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    border-radius: 7px;
+    border: none;
+    background-color: #098f09;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+.input-fields .submit-btn:hover{
+    background-color: #056e05;
+}
+
+.feedback-item{
+    margin: 20px 0;
+    box-shadow: 3px 10px 10px #aba8a8;
+    padding: 10px;
+}
+.feedback-item p{
+    padding: 5px 0;
+}
+.delete-btn{
+    font-size: 17px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #d60c0c;
+    color: wheat;
+    border-radius: 7px;
+}
+
+.message{
+    background-color:aqua;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.found{
+    margin: 15px 0;
+    padding: 10px 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* feedback list */
+.feedback-container{
+    border-top: 1px solid gray;
+    padding: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+@media (max-width:900px) {
+    .feedback-container{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px;
+
+    }
+}
+
+@media (max-width:680px) {
+    .feedback-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:500px) {
+    .feedback-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
